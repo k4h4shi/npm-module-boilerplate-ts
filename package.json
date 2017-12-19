@@ -1,0 +1,36 @@
+{
+  "private": true,
+  "engines": {
+    "node": ">=0.6.19"
+  },
+  "name": "npm-module-boilerplate",
+  "version": "0.0.1",
+  "description": "My boilerplate for npm modules.",
+  "main": "./dist/index.js",
+  "scripts": {
+    "test": "mocha --recursive test/ --require babel-register",
+    "test:watch": "npm run test -- --watch",
+    "cover": "nyc --reporter=lcov --reporter=text npm run test",
+    "lint": "eslint .",
+    "lint:watch": "npm run lint -- --watch",
+    "lint:fix": "npm run lint -- --fix",
+    "build": "babel src -d dist",
+    "prepublish": "npm run test && npm run lint && npm run build"
+  },
+  "keywords": [],
+  "author": "Kotaro Takahashi <kotaro.t@k4h4shi.com> (http://k4h4shi.com)",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-register": "^6.26.0",
+    "chai": "^4.1.2",
+    "eslint": "^4.13.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "mocha": "^4.0.1",
+    "nyc": "^11.3.0",
+    "sinon": "^4.1.3"
+  }
+}

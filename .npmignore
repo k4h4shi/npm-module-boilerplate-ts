@@ -1,0 +1,9 @@
+./src/
+./test/
+
+.babelrc
+.editorconfig
+.eslintrc
+.gitattributes
+.gitignore
+.travis.yml

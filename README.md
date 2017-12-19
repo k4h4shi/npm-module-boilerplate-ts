@@ -1,20 +1,21 @@
-# npm-module-boilerplate
-My boilerplate for npm modules.
+# npm-module-boilerplate-ts
+My boilerplate for npm modules with TypeScript.
 
 ## Features
+- build wiht TypeScript.
 - Test with mocha + chai + sinon.
 - Coverage with nyc.
-- Build with Babel.(ES6 -> ES5)
-- Lint with ESLint. ([Airbnb JavaScript Style Guide](http://airbnb.io/javascript/))
+- Lint with TSLint.
+- Format with Prettier.
 
 ## Commands
 - `test`: run test with mocha.
 - `test:watch`: run test with mocha and watch.
-- `build`: run build with babel-cli.
-- `cover`: run code coverage using nyc.
-- `lint`: run lint with ESLint as airbnb JS style.
-- `lint:watch`: run lint with ESLint as airbnb JS style and watch.
-- `lint:fix`: run lint with ESLint and fix as airbnb JS style.
+- `cover`: check code coverage using nyc.
+- `lint`: lint with TSLint and Prettier.
+- `lint:fix`: lint with ESLint and Prettier then fix.
+- `build`: Create production build.
+- `lint:watch`: lint with TSLInt and watch.
 
 ## License
 MIT

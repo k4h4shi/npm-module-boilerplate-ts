@@ -1,9 +1,13 @@
 ./src/
 ./test/
 
-.babelrc
 .editorconfig
-.eslintrc
 .gitattributes
 .gitignore
 .travis.yml
+tslint.json
+tsconfig.json
+tsconfig.production.json
+yarn-error.log
+.nyc_output
+coverage
